@@ -1,4 +1,5 @@
 <%= simple_form_for(@cocktail) do |f| %>
   <%= f.input :name %>
-  <%= f.submit "add an ingredient", class: "btn btn-primary" %>
+  <%= f.submit "Add this cocktail", class: "btn btn-primary" %>
 <% end %>
+<%= link_to 'Cancel', cocktails_path, {class: "btn btn-danger"} %>
